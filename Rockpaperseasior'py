@@ -1,0 +1,19 @@
+import random
+
+choices = ["rock", "paper", "scissors"]
+computer = random.choice(choices)
+
+you = input("Choose rock, paper, or scissors: ")
+
+print("Computer chose:", computer)
+
+if you == computer:
+
+    print("Draw!")
+
+elif (you == "rock" and computer == "scissors") or \
+     (you == "paper" and computer == "rock") or \
+     (you == "scissors" and computer == "paper"):
+    print("You Win! 🎉")
+else:
+    print("You Lose 😢")
